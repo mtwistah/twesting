@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>first page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Hi! I am the top of this page</h1>
+    <p id="demo">I am the first paragraph.
+    I am the second paragraph.
+    <br>
+      How does it feel to be the first paragraph?
+    I will never know. </p>
+
+    <button type="button" onclick="myFunction()">Eat text</button>
+    <script>
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "I've just eaten all that text.";
+  }
+    </script>
+<br>
+<br>
+<button onclick="document.getElementById('myImage').src='perrete.jpeg'">Perrete</button>
+<img id="myImage" src="quien.png" style="width:100px">
+<button onclick="document.getElementById('myImage').src='gatete.jpeg'">Gatete</button>
+
+  </body>
+</html>
