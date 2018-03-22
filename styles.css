@@ -1,16 +1,16 @@
 body {
-background-color: black;
+background-color: grey;
 }
 
 h1 {
-color: white;
+color: khaki;
 text-align: center;
 }
 
 p {
 font-family: verdana;
 font-size: 20px;
-color: khaki;
-border: 2px solid powderblue;
-text-align: center;
+color: black;
+/* border: 2px solid powderblue; */
+text-align: left;
 }

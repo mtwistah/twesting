@@ -13,11 +13,54 @@
       How does it feel to be the first paragraph?
     I will never know. </p>
 
+    <p id="string1"></p>
+    <p id="string1_length"></p>
+    <p id="wordCount"></p>
+    <p id="splitString"></p>
+    <p id="testResult"></p>
+
     <button type="button" onclick="myFunction()">Eat text</button>
+
     <script>
     function myFunction() {
     document.getElementById("demo").innerHTML = "I've just eaten all that text.";
   }
+
+    var string1 = "I am some super string string I am";
+    var string1_length = string1.length;
+    var wordCount = 0;
+
+    document.getElementById("string1").innerHTML = `String: ${string1}`;
+    document.getElementById("string1_length").innerHTML = `Chars: ${string1_length}.`;
+    for (i = 0; i < string1_length; i++) {
+        if (string1[i] === " ") {
+          wordCount++;
+        }
+    }
+    wordCount+=1;
+    document.getElementById("wordCount").innerHTML = `Words: ${wordCount}.`;
+
+    var splitString = string1.split(" ");
+    // var splitString_length = splitString.length;
+    document.getElementById("splitString").innerHTML = splitString;
+
+    function find_duplicate_in_array(arra1) {
+        var i,
+        len=arra1.length,
+        result = [],
+        obj = {};
+          for (i=0; i<len; i++)
+          {
+          obj[arra1[i]]=0;
+          }
+            for (i in obj) {
+            result.push(i);
+            }
+      return result;
+    }
+var arr = [1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6];
+    document.getElementById("testResult").innerHTML = find_duplicate_in_array(splitString);
+
     </script>
 <br>
 <br>
